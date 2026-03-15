@@ -1,6 +1,8 @@
 import React, { use, useState } from 'react';
 import Food from '../Food/Food';
 import './Foods.css'
+import Cart from '../Cart/Cart';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const Foods = ({ FoodData }) => {
@@ -15,6 +17,11 @@ const Foods = ({ FoodData }) => {
         setFoodCart([...foodCart, foodData])
     }
 
+    const handleOder = () => {
+        setFoodCart([]);
+        toast.success('Your Oder Successfully Done')
+    }
+
 
     return (
         <div className='main-container'>
@@ -27,10 +34,11 @@ const Foods = ({ FoodData }) => {
             <div className='food-cart'>
                 <h1>Food Cart</h1>
                 {
-                    foodCart.map(c => <h3>{c.strMeal}</h3>)
+                    foodCart.map(c => <Cart c={c}></Cart>)
                 }
-                <button className='button1'>Click Oder</button>
+                <button onClick={handleOder} className='button1'>Click Oder</button>
             </div>
+            <ToastContainer />
         </div>
     );
 };
