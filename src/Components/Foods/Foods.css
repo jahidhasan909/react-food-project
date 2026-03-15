@@ -1,0 +1,27 @@
+.Foods-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.food-cart {
+    background-color: rgba(165, 42, 42, 0.387);
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.button1 {
+    background-color: rgba(107, 169, 107, 0.357);
+    color: white;
+    border: 2px solid rgba(71, 132, 71, 0.998);
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+}
