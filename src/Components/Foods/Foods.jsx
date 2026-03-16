@@ -15,6 +15,7 @@ const Foods = ({ FoodData }) => {
 
     const addtoCart = (foodData) => {
         setFoodCart([...foodCart, foodData])
+        
     }
 
     const handleOder = () => {

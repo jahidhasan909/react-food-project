@@ -3,6 +3,7 @@
     padding: 10px 20px;
     background-color: rgba(128, 128, 128, 0.213);
     border-radius: 10px;
+    border: 2px solid rgba(165, 42, 42, 0.312);
 }
 
 .img2 {
@@ -22,4 +23,8 @@
 .h3 {
     height: 22px;
     overflow: hidden;
+}
+
+.addCartbgColor {
+    background-color: rgba(165, 42, 42, 0.43);
 }
